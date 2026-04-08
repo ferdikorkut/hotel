@@ -1,0 +1,104 @@
+/* ============================================================
+   Modern CSS Reset
+   Kaynaklar: Josh W. Comeau + Eric Meyer (seçili) + kişisel
+   ============================================================ */
+
+/* 1. Box-sizing: padding/border boyutu genişliğe dahil eder */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Tüm varsayılan margin ve padding'i sıfırla
+      *:not(dialog) → tarayıcı dialog'un varsayılan margin'ini korur */
+*:not(dialog) {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Body temel ayarları */
+body {
+    line-height: 1.5;
+    /* okunabilir satır aralığı */
+    -webkit-font-smoothing: antialiased;
+    /* macOS'ta font keskinliği */
+}
+
+/* 4. Medya elementleri: taşmasın, alt boşluk (inline gap) olmasın */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 5. Form elemanları font'u miras alsın (tarayıcı override'ını kaldırır) */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 6. Uzun kelimeler/metinler container'dan taşmasın */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 7. Akıllı metin sarma:
+      pretty → paragraflar için son satırda tek kelime kalmasın
+      balance → başlıklar için satırlar dengeli bölünsün */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* 8. Liste stilleri kaldırıldı (navigasyon, menü vb. için) */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 9. Link alt çizgisi kaldırıldı, rengi parent'tan miras alır */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 10. Tablo kenarları birleşsin, çift border olmasın */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 11. height: auto / min-content gibi keyword animasyonları çalışsın
+       (reduce-motion tercih etmeyenlerde aktif) */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+/* 12. React / Next.js root elementi için yığın bağlamı oluştur
+       (z-index sorunlarını izole eder) */
+#root,
+#__next {
+    isolation: isolate;
+}
