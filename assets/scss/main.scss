@@ -1,0 +1,15 @@
+// 1. Abstracts — CSS çıktısı üretmez, araçlar
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+
+// 2. Base — sıfırlama ve temel HTML element stilleri
+@use 'base/reset';
+@use 'base/fonts';
+@use 'base/typography';
+
+// 3. Layout — sayfa iskeletini oluşturan parçalar
+@use 'layout/header';
+@use 'layout/footer';
+
+// 4. Sections — sıra HTML'deki section sırasıyla aynı olsun
+@use 'sections/hero';

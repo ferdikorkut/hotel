@@ -1,0 +1,15 @@
+# Claude Code memory
+memory/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# SCSS source maps (isteğe bağlı, kaldırabilirsin)
+# assets/css/*.map
