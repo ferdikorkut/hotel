@@ -1,5 +1,8 @@
-# Claude Code memory
+# Local
 memory/
+
+# Dependencies
+node_modules/
 
 # macOS
 .DS_Store
