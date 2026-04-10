@@ -3,9 +3,7 @@
 @use 'abstracts/mixins';
 
 // 2. Bootstrap — variables'tan sonra gelmeli
-@use '../../node_modules/bootstrap/scss/bootstrap' with (
-  $enable-reboot: false
-);
+@use '../../node_modules/bootstrap/scss/bootstrap';
 
 // 3. Base — sıfırlama ve temel HTML element stilleri
 @use 'base/reset';
@@ -16,5 +14,5 @@
 @use 'layout/header';
 @use 'layout/footer';
 
-// 5. Sections — sıra HTML'deki section sırasıyla aynı olsun
+// 5. Sections — sıra HTML'deki section sırasıyla aynı olsun!
 @use 'sections/hero';
