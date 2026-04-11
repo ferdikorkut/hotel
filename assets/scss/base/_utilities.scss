@@ -1,0 +1,26 @@
+@use "../abstracts/variables";
+
+// renkler
+.hotel-yellow {
+  color: variables.$hotel-yellow;
+}
+.hotel-yellow-hover {
+  color: variables.$hotel-yellow-hover;
+}
+
+// before & after cizgileri
+.line-before-after {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-transform: uppercase;
+  color: variables.$hotel-yellow;
+  font-weight: bold;
+  &::before,
+  &::after {
+    content: "";
+    width: 2rem;
+    height: 2px;
+    background-color: variables.$hotel-yellow-hover;
+  }
+}

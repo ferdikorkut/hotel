@@ -1,41 +1,74 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HotelF</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <nav class="main-nav">
-          <a href="index.html"><img src="assets/img/logo.png" alt="Logo" /></a>
-          <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOTEL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <div>
+        <a href="#!" class="fs-2 text-white fw-bold"><i class="bi bi-signpost-2-fill me-1 fs-2 hotel-yellow"></i>
+          HOTEL</a>
       </div>
-    </header>
-    <main>
-      <section id="hero">
-        <div class="container">test</div>
-      </section>
-      <section id="about">
-        <div class="container"></div>
-      </section>
-      <section id="services">
-        <div class="container"></div>
-      </section>
-      <section id="contact">
-        <div class="container"></div>
-      </section>
-    </main>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+      <nav>
+        <ul class="d-flex gap-4 text-uppercase text-white fw-bold">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="btn-hotel-yellow-rounded">
+        <a href="#!" class="">Booking</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <div class="line-before-after">Hotel & Resort</div>
+        <h1>The Coolest Hotel And Resort</h1>
+        <p class="text-white">
+          Experience a premium seaside escape with elegant rooms, curated
+          amenities, ocean views and a clean luxury atmosphere designed for
+          modern travelers.
+        </p>
+        <div class="button-group">
+          <div class="btn-hotel-yellow-rounded">
+            <a href="#!" class="">Book A Room</a>
+          </div>
+          <div class="btn-hotel-gray-rounded">
+            <a href="#!" class="">Explore Rooms</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container"></div>
+    </section>
+
+    <section id="services">
+      <div class="container"></div>
+    </section>
+
+    <section id="contact">
+      <div class="container"></div>
+    </section>
+  </main>
+
+  <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

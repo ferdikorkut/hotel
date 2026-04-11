@@ -1,0 +1,16 @@
+// backgrounds
+$hero-background: url("../../../assets/img/hero-bg.avif");
+
+// overlays/gradientler
+$linear-overlay: linear-gradient(
+  90deg,
+  rgba(4, 22, 53, 0.88) 0%,
+  rgba(6, 33, 76, 0.58) 38%,
+  rgba(10, 27, 60, 0.2) 100%
+);
+
+// renkler
+$hotel-yellow: #f4a300;
+$hotel-yellow-hover: #d98d00;
+$hotel-gray: #808493;
+$hotel-gray-hover: #9397a2;

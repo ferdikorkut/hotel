@@ -1,6 +1,29 @@
+@use "../abstracts/variables";
+@use "../base/utilities";
+
 #hero {
-    background-image: url('../../../assets/img/hero-bg.avif');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+  background-image: variables.$linear-overlay, variables.$hero-background;
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+
+  .container {
+    padding-left: 5rem;
+    h1 {
+      color: white;
+      font-size: 5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-wrap: unset;
+      max-width: 1000px;
+    }
+    p {
+      max-width: 1000px;
+    }
+  }
+  .button-group {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
 }

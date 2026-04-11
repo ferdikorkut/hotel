@@ -1,18 +1,26 @@
 // 1. Abstracts — CSS çıktısı üretmez, araçlar
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
+@use "abstracts/variables";
+@use "abstracts/mixins";
 
 // 2. Bootstrap — variables'tan sonra gelmeli
-@use '../../node_modules/bootstrap/scss/bootstrap';
+@use "../../node_modules/bootstrap/scss/bootstrap";
 
 // 3. Base — sıfırlama ve temel HTML element stilleri
-@use 'base/reset';
-@use 'base/fonts';
-@use 'base/typography';
+@use "base/reset";
+@use "base/fonts";
+@use "base/typography";
+@use "base/utilities";
 
-// 4. Layout — sayfa iskeletini oluşturan parçalar
-@use 'layout/header';
-@use 'layout/footer';
+// 4. Components — tekrar kullanılabilir bileşenler
+@use "components/buttons";
 
-// 5. Sections — sıra HTML'deki section sırasıyla aynı olsun!
-@use 'sections/hero';
+// 5. Layout — sayfa iskeletini oluşturan parçalar
+@use "layout/header";
+@use "layout/footer";
+
+// 6. Sections — sıra HTML'deki section sırasıyla aynı olsun!
+@use "sections/hero";
+
+#services {
+  height: 500px;
+}

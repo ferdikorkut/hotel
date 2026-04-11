@@ -1,0 +1,31 @@
+@use "../abstracts/variables";
+
+// butonlar
+.btn-hotel-yellow-rounded {
+  background-color: variables.$hotel-yellow;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-2px);
+    background-color: variables.$hotel-yellow-hover;
+  }
+}
+.btn-hotel-gray-rounded {
+  background-color: variables.$hotel-gray;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-2px);
+    background-color: variables.$hotel-gray-hover;
+  }
+}
