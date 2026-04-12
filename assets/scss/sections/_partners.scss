@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as v;
+@use "../base/utilities" as u;
+@use "../abstracts/mixins" as m;
+
+#partners {
+  background-color: v.$hotel-yellow-color;
+  height: 14rem;
+  padding: 2rem 0 5rem 0;
+  margin-bottom: 90px;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    gap: 1.5rem;
+    .partners {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      text-transform: uppercase;
+      gap: 1rem;
+      width: 100%;
+      div {
+        background-color: white;
+        text-align: center;
+        color: v.$h2-color;
+        width: 100%;
+        padding: 20px 40px;
+        border-radius: v.$square-button-radius;
+        flex: 1;
+      }
+    }
+  }
+}

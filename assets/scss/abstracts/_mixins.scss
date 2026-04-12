@@ -103,43 +103,104 @@
     }
   }
 }
-@mixin plan-card ($top-color){
-    @include box-genel-gorunum(center);
-        transition: all 0.5s ease;
-    .card-up {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 0 0 50% 50%;
-      width: 120px;
-      height: 120px;
-      background-color: $top-color;
-      font-size: 2rem;
-      color: v.$button-yazi-renk;
+@mixin plan-card($top-color) {
+  @include box-genel-gorunum(center);
+  transition: all 0.5s ease;
+  .card-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 50% 50%;
+    width: 120px;
+    height: 120px;
+    background-color: $top-color;
+    font-size: 2rem;
+    color: v.$button-yazi-renk;
+  }
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .card-down {
+    .price {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 4rem;
+      color: v.$h2-color;
+      font-weight: bold;
     }
-    &:hover {
-      transform: scale(1.05);
-      cursor: pointer;
-
-    }
-    .card-down {
-      .price {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 4rem;
-        color: v.$h2-color;
-        font-weight: bold;
-      }
-      .room-features {
-        text-align: left;
-        margin: 1.5rem 0;
-        li {
-          &::before {
-            content: "✓";
-            color: v.$hotel-yellow-color;
-            margin-right: 1rem;
-          }
+    .room-features {
+      text-align: left;
+      margin: 1.5rem 0;
+      li {
+        &::before {
+          content: "✓";
+          color: v.$hotel-yellow-color;
+          margin-right: 1rem;
         }
       }
     }
-
+  }
+}
+@mixin team-card($background) {
+  @include box-genel-gorunum(left);
+  .card-up {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-image: $background;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .social {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translateY(20px);
+      .social-1 {
+        @include social(1rem);
+      }
+      .social-2 {
+        @include social(4rem);
+      }
+      .social-3 {
+        @include social(7rem);
+      }
+    }
+  }
+  &:hover {
+    .social {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    cursor: pointer;
+  }
+  .card-down {
+    h5 {
+      color: v.$h3-color;
+      font-size: v.$h5-font-size;
+      font-weight: bold;
+    }
+  }
+}
+@mixin social($alt-deger) {
+  background-color: v.$hotel-yellow-color;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: $alt-deger;
+  transition: background-color 0.3s ease;
+  &:hover {
+        background-color: v.$h2-color;
+    }
 }

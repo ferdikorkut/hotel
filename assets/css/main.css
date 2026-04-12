@@ -12054,7 +12054,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 h6 {
@@ -12808,6 +12808,489 @@ select {
   content: "✓";
   color: #f4a300;
   margin-right: 1rem;
+}
+
+#partners {
+  background-color: #f4a300;
+  height: 14rem;
+  padding: 2rem 0 5rem 0;
+  margin-bottom: 90px;
+}
+#partners .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  gap: 1.5rem;
+}
+#partners .container .partners {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 1rem;
+  width: 100%;
+}
+#partners .container .partners div {
+  background-color: white;
+  text-align: center;
+  color: #0b2b64;
+  width: 100%;
+  padding: 20px 40px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+#team {
+  margin-bottom: 90px;
+}
+#team .container {
+  margin-top: 2rem;
+}
+#team .container h3 {
+  color: #0b2b64;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#team .container > p {
+  max-width: 650px;
+  color: #808493;
+  padding-bottom: 1.5rem;
+}
+
+.team-info .team-person-1 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.team-info .team-person-1 div.card-down {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: left;
+}
+.team-info .team-person-1 div.card-down h4 {
+  font-weight: bold;
+  color: #0b2b64;
+  font-size: 2rem;
+}
+.team-info .team-person-1 div.card-down p {
+  padding-top: 0.5rem;
+}
+.team-info .team-person-1 .card-up {
+  display: flex;
+  height: 250px;
+  width: 100%;
+  background-image: url("../../../assets/img/team1.avif");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.team-info .team-person-1 .card-up .social {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.team-info .team-person-1 .card-up .social .social-1 {
+  background-color: #f4a300;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+.team-info .team-person-1 .card-up .social .social-1:hover {
+  background-color: #0b2b64;
+}
+.team-info .team-person-1 .card-up .social .social-2 {
+  background-color: #f4a300;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 4rem;
+  transition: background-color 0.3s ease;
+}
+.team-info .team-person-1 .card-up .social .social-2:hover {
+  background-color: #0b2b64;
+}
+.team-info .team-person-1 .card-up .social .social-3 {
+  background-color: #f4a300;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 7rem;
+  transition: background-color 0.3s ease;
+}
+.team-info .team-person-1 .card-up .social .social-3:hover {
+  background-color: #0b2b64;
+}
+.team-info .team-person-1:hover .social {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.team-info .team-person-1:hover {
+  cursor: pointer;
+}
+.team-info .team-person-1 .card-down h5 {
+  color: #0b2b64;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.team-info .team-person-2 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.team-info .team-person-2 div.card-down {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: left;
+}
+.team-info .team-person-2 div.card-down h4 {
+  font-weight: bold;
+  color: #0b2b64;
+  font-size: 2rem;
+}
+.team-info .team-person-2 div.card-down p {
+  padding-top: 0.5rem;
+}
+.team-info .team-person-2 .card-up {
+  display: flex;
+  height: 250px;
+  width: 100%;
+  background-image: url("../../../assets/img/team2.avif");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.team-info .team-person-2 .card-up .social {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.team-info .team-person-2 .card-up .social .social-1 {
+  background-color: #f4a300;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+.team-info .team-person-2 .card-up .social .social-1:hover {
+  background-color: #0b2b64;
+}
+.team-info .team-person-2 .card-up .social .social-2 {
+  background-color: #f4a300;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 4rem;
+  transition: background-color 0.3s ease;
+}
+.team-info .team-person-2 .card-up .social .social-2:hover {
+  background-color: #0b2b64;
+}
+.team-info .team-person-2 .card-up .social .social-3 {
+  background-color: #f4a300;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 7rem;
+  transition: background-color 0.3s ease;
+}
+.team-info .team-person-2 .card-up .social .social-3:hover {
+  background-color: #0b2b64;
+}
+.team-info .team-person-2:hover .social {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.team-info .team-person-2:hover {
+  cursor: pointer;
+}
+.team-info .team-person-2 .card-down h5 {
+  color: #0b2b64;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.team-info .team-person-3 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.team-info .team-person-3 div.card-down {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: left;
+}
+.team-info .team-person-3 div.card-down h4 {
+  font-weight: bold;
+  color: #0b2b64;
+  font-size: 2rem;
+}
+.team-info .team-person-3 div.card-down p {
+  padding-top: 0.5rem;
+}
+.team-info .team-person-3 .card-up {
+  display: flex;
+  height: 250px;
+  width: 100%;
+  background-image: url("../../../assets/img/team3.avif");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.team-info .team-person-3 .card-up .social {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.team-info .team-person-3 .card-up .social .social-1 {
+  background-color: #f4a300;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+.team-info .team-person-3 .card-up .social .social-1:hover {
+  background-color: #0b2b64;
+}
+.team-info .team-person-3 .card-up .social .social-2 {
+  background-color: #f4a300;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 4rem;
+  transition: background-color 0.3s ease;
+}
+.team-info .team-person-3 .card-up .social .social-2:hover {
+  background-color: #0b2b64;
+}
+.team-info .team-person-3 .card-up .social .social-3 {
+  background-color: #f4a300;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 7rem;
+  transition: background-color 0.3s ease;
+}
+.team-info .team-person-3 .card-up .social .social-3:hover {
+  background-color: #0b2b64;
+}
+.team-info .team-person-3:hover .social {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.team-info .team-person-3:hover {
+  cursor: pointer;
+}
+.team-info .team-person-3 .card-down h5 {
+  color: #0b2b64;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.team-info .team-person-4 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.team-info .team-person-4 div.card-down {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: left;
+}
+.team-info .team-person-4 div.card-down h4 {
+  font-weight: bold;
+  color: #0b2b64;
+  font-size: 2rem;
+}
+.team-info .team-person-4 div.card-down p {
+  padding-top: 0.5rem;
+}
+.team-info .team-person-4 .card-up {
+  display: flex;
+  height: 250px;
+  width: 100%;
+  background-image: url("../../../assets/img/team4.avif");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.team-info .team-person-4 .card-up .social {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.team-info .team-person-4 .card-up .social .social-1 {
+  background-color: #f4a300;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+.team-info .team-person-4 .card-up .social .social-1:hover {
+  background-color: #0b2b64;
+}
+.team-info .team-person-4 .card-up .social .social-2 {
+  background-color: #f4a300;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 4rem;
+  transition: background-color 0.3s ease;
+}
+.team-info .team-person-4 .card-up .social .social-2:hover {
+  background-color: #0b2b64;
+}
+.team-info .team-person-4 .card-up .social .social-3 {
+  background-color: #f4a300;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 7rem;
+  transition: background-color 0.3s ease;
+}
+.team-info .team-person-4 .card-up .social .social-3:hover {
+  background-color: #0b2b64;
+}
+.team-info .team-person-4:hover .social {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.team-info .team-person-4:hover {
+  cursor: pointer;
+}
+.team-info .team-person-4 .card-down h5 {
+  color: #0b2b64;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 body {
