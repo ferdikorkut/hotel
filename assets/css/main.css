@@ -13293,6 +13293,134 @@ select {
   font-weight: bold;
 }
 
+#special {
+  background-image: linear-gradient(rgba(4, 22, 53, 0.7), rgba(4, 22, 53, 0.7)), url("../../../assets/img/special-bg.avif");
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 5rem 4.7rem 5rem;
+  margin-bottom: 90px;
+}
+#special .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+#special .container h3 {
+  color: white;
+  font-weight: bold;
+}
+#special .container p {
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+#gallery {
+  margin-bottom: 90px;
+}
+#gallery .container {
+  margin-top: 2rem;
+}
+#gallery .container h3 {
+  color: #0b2b64;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#gallery .container > p {
+  max-width: 650px;
+  color: #808493;
+  padding-bottom: 1.5rem;
+}
+
+.gallery-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.gallery-items img {
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  height: 210px;
+  flex: 1 1 calc(25% - 20px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.gallery-items img:hover {
+  transform: scale(1.03);
+  filter: brightness(0.8);
+}
+
+#video {
+  margin-bottom: 90px;
+}
+#video .container {
+  margin-top: 2rem;
+}
+#video .container h3 {
+  color: #0b2b64;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#video .container > p {
+  max-width: 650px;
+  color: #808493;
+  padding-bottom: 1.5rem;
+}
+
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.video img {
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 70%;
+  height: 450px;
+  flex: 1 1;
+}
+.video .play {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-size: 2rem;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  color: #f4a300;
+  cursor: pointer;
+}
+.video .play::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid white;
+  animation: playPulse 1.2s ease-out infinite;
+}
+
+@keyframes playPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
 body {
   background-color: #f7f7f7;
 }/*# sourceMappingURL=main.css.map */

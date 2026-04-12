@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as v;
+@use "../base/utilities" as u;
+@use "../abstracts/mixins" as m;
+
+#gallery {
+  //   min-height: 70vh;
+margin-bottom: 90px;
+  .container {
+    margin-top: 2rem;
+    h3 {
+      color: v.$h3-color;
+      font-size: v.$h3-font-size;
+      font-weight: bold;
+    }
+    > p {
+      max-width: 650px;
+      color: v.$hotel-gray;
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+.gallery-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  img {
+    object-fit: cover;
+    border-radius: v.$box-radius;
+    box-shadow: v.$box-shadow;
+    min-width: 200px;
+    height: 210px;
+    flex: 1 1 calc(25% - 20px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.03);
+      filter: brightness(0.8);
+    }
+
+  }
+
+
+}
+
