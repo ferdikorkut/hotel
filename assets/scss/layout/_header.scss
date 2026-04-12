@@ -11,7 +11,7 @@ header {
       transition: all 0.3s ease;
       position: relative;
       &.active {
-        color: variables.$hotel-yellow-hover;
+        color: variables.$hotel-yellow-hover-color;
       }
       &::after {
         content: "";
@@ -20,11 +20,11 @@ header {
         bottom: -4px;
         width: 0;
         height: 2px;
-        background-color: variables.$hotel-yellow-hover;
+        background-color: variables.$hotel-yellow-hover-color;
         transition: all 0.3s ease;
       }
       &:hover {
-        color: variables.$hotel-yellow-hover;
+        color: variables.$hotel-yellow-hover-color;
         &::after {
           width: 100%;
         }

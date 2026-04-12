@@ -2,7 +2,7 @@
 @use "../base/utilities" as u;
 @use "../abstracts/mixins" as m;
 
-#rooms {
+#pricing {
   margin-bottom: 90px;
   .container {
     margin-top: 2rem;
@@ -18,14 +18,14 @@
     }
   }
 }
-.room-items {
-  .room-card-1 {
-    @include m.room-card(v.$card1-background, v.$badge-popular-color);
+.plan-items {
+  .plan-card-1 {
+    @include m.plan-card (v.$hotel-yellow-color);
   }
-  .room-card-2 {
-    @include m.room-card(v.$card2-background, v.$badge-featured-color);
+  .plan-card-2 {
+     @include m.plan-card (v.$badge-popular-color);
   }
-  .room-card-3 {
-    @include m.room-card(v.$card3-background, v.$badge-luxury-color);
+  .plan-card-3 {
+     @include m.plan-card (v.$hotel-yellow-color);
   }
 }

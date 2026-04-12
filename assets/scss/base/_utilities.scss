@@ -2,10 +2,10 @@
 
 // renkler
 .hotel-yellow {
-  color: v.$hotel-yellow;
+  color: v.$hotel-yellow-color;
 }
 .hotel-yellow-hover {
-  color: v.$hotel-yellow-hover;
+  color: v.$hotel-yellow-hover-color;
 }
 
 // before & after cizgileri
@@ -14,13 +14,13 @@
   align-items: center;
   gap: 0.75rem;
   text-transform: uppercase;
-  color: v.$hotel-yellow;
+  color: v.$hotel-yellow-color;
   font-weight: bold;
   &::before,
   &::after {
     content: "";
     width: 2rem;
     height: 2px;
-    background-color: v.$hotel-yellow-hover;
+    background-color: v.$hotel-yellow-hover-color;
   }
 }

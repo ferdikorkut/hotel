@@ -4,7 +4,7 @@
 // butonlar
 .btn-hotel-yellow-rounded {
   display: inline-block;
-  @include m.button(v.$hotel-yellow, v.$rounded-button-radius, 0.7rem 1.5rem, v.$hotel-yellow-hover);
+  @include m.button(v.$hotel-yellow-color, v.$rounded-button-radius, 0.7rem 1.5rem, v.$hotel-yellow-hover-color);
 }
 .btn-hotel-gray-rounded {
   display: inline-block;
@@ -12,5 +12,5 @@
 }
 .btn-hotel-yellow-square {
   display: inline-block;
-  @include m.button(v.$hotel-yellow, v.$square-button-radius, 1.4rem 1.3rem, v.$hotel-yellow-hover);
+  @include m.button(v.$hotel-yellow-color, v.$square-button-radius, 1.4rem 1.3rem, v.$hotel-yellow-hover-color);
 }

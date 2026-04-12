@@ -25,6 +25,7 @@
   align-items: center;
   overflow: hidden;
   div.card-down {
+    width: 100%;
     padding: v.$box-padding;
     text-align: $font-hizalama;
     h4 {
@@ -38,7 +39,7 @@
   }
 }
 
-@mixin room-card ($background, $badge-rengi){
+@mixin room-card($background, $badge-rengi) {
   @include box-genel-gorunum(left);
   transition: all 0.3s ease;
   .card-up {
@@ -74,12 +75,13 @@
   }
   &:hover {
     transform: translateY(-5px);
+    cursor: pointer;
   }
   .card-down {
     .stars {
       padding: 5px 0;
       i {
-        color: v.$hotel-yellow;
+        color: v.$hotel-yellow-color;
         &::after {
           content: " ";
         }
@@ -100,4 +102,44 @@
       }
     }
   }
+}
+@mixin plan-card ($top-color){
+    @include box-genel-gorunum(center);
+        transition: all 0.5s ease;
+    .card-up {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 50% 50%;
+      width: 120px;
+      height: 120px;
+      background-color: $top-color;
+      font-size: 2rem;
+      color: v.$button-yazi-renk;
+    }
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+
+    }
+    .card-down {
+      .price {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 4rem;
+        color: v.$h2-color;
+        font-weight: bold;
+      }
+      .room-features {
+        text-align: left;
+        margin: 1.5rem 0;
+        li {
+          &::before {
+            content: "✓";
+            color: v.$hotel-yellow-color;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+
 }
