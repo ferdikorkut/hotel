@@ -1,6 +1,9 @@
 // backgrounds
 $hero-background: url("../../../assets/img/hero-bg.avif");
-
+$counter-background: url("../../../assets/img/counter-bg.avif");
+$card1-background: url("../../../assets/img/card-bg1.avif");
+$card2-background: url("../../../assets/img/card-bg2.avif");
+$card3-background: url("../../../assets/img/card-bg3.avif");
 // overlays/gradientler
 $linear-overlay: linear-gradient(
   90deg,
@@ -8,6 +11,7 @@ $linear-overlay: linear-gradient(
   rgba(6, 33, 76, 0.58) 38%,
   rgba(10, 27, 60, 0.2) 100%
 );
+$solid-overlay: linear-gradient(rgba(4, 22, 53, 0.7),rgba(4, 22, 53, 0.7));
 
 // renkler
 $hotel-yellow: #f4a300;
@@ -17,6 +21,9 @@ $hotel-gray-hover: #9397a2;
 $bg-color: #f7f7f7;
 $h2-color: #0b2b64;
 $h3-color: #0b2b64;
+$badge-popular-color: #24c184;
+$badge-featured-color: #e74c3c;
+$badge-luxury-color: #8e44ad;
 
 // box
 $box-arka-plan-renk: white;
@@ -33,6 +40,6 @@ $square-button-radius: 10px;
 $h1-font-size: 5rem;
 $h2-font-size: 4rem;
 $h3-font-size: 3rem;
-$h4-font-size: 1.6rem;
+$h4-font-size: 2rem;
 $h5-font-size: 1.2rem;
 $h6-font-size: 1rem;

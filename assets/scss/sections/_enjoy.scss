@@ -3,11 +3,11 @@
 @use "../abstracts/mixins" as m;
 
 #enjoy {
-    margin-bottom: 90px;
+  margin-bottom: 90px;
   .container {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     & > div {
       flex: 1;
     }
@@ -40,16 +40,13 @@
   .enjoy-img {
     position: relative;
     overflow: hidden;
-  
-    height: 488px;
+    height: 470px;
     border-radius: v.$box-radius;
     .img1 {
-        // display: block;
-        // width: 100%;
-        height: 100%;
-        margin-left: -100px;
-        object-fit: cover;
-        border-radius: v.$box-radius;
+      height: 100%;
+      margin-left: -100px;
+      object-fit: cover;
+      border-radius: v.$box-radius;
     }
     .img2 {
       position: absolute;
@@ -58,6 +55,7 @@
       width: 45%;
       border: 8px solid white;
       border-radius: v.$box-radius;
+      box-shadow: v.$box-shadow;
     }
-}
+  }
 }

@@ -15,7 +15,7 @@
   }
 }
 
-@mixin box-genel-gorunum ($font-hizalama){
+@mixin box-genel-gorunum($font-hizalama) {
   background-color: v.$box-arka-plan-renk;
   border-radius: v.$box-radius;
   box-shadow: v.$box-shadow;
@@ -23,9 +23,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-//   transition: all 0.3s ease;
-  div.feature-down {
-      padding: v.$box-padding;
+  overflow: hidden;
+  div.card-down {
+    padding: v.$box-padding;
     text-align: $font-hizalama;
     h4 {
       font-weight: bold;
@@ -34,6 +34,70 @@
     }
     p {
       padding-top: 0.5rem;
+    }
+  }
+}
+
+@mixin room-card ($background, $badge-rengi){
+  @include box-genel-gorunum(left);
+  transition: all 0.3s ease;
+  .card-up {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-image: $background;
+    background-size: cover;
+    position: relative;
+    .badge-top {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background-color: $badge-rengi;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .badge-bottom {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      background-color: white;
+      color: black;
+      padding: 10px 10px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+  }
+  &:hover {
+    transform: translateY(-5px);
+  }
+  .card-down {
+    .stars {
+      padding: 5px 0;
+      i {
+        color: v.$hotel-yellow;
+        &::after {
+          content: " ";
+        }
+      }
+    }
+    p {
+      padding-bottom: 1rem;
+    }
+    .room-features {
+      ul {
+        display: flex;
+        gap: 10px;
+        padding: 0.5rem 0;
+        li {
+          display: flex;
+          gap: 5px;
+        }
+      }
     }
   }
 }
