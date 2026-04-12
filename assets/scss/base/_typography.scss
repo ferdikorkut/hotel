@@ -1,5 +1,8 @@
+@use "../abstracts/variables" as v;
+
 body {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+    color: v.$hotel-gray;
 }
 
 h1,
@@ -8,5 +11,24 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
+}
+
+h1 {
+  font-size: v.$h1-font-size;
+}
+h2 {
+  font-size: v.$h2-font-size;
+}
+h3 {
+  font-size: v.$h3-font-size;
+}
+h4 {
+  font-size: v.$h4-font-size;
+}
+h5 {
+  font-size: v.$h5-font-size;
+}
+h6 {
+  font-size: v.$h6-font-size;
 }

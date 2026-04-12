@@ -54,12 +54,145 @@
       </div>
     </section>
 
-    <section id="about">
-      <div class="container"></div>
+    <section id="booking">
+      <div class="container">
+        <div class="booking-form">
+          <form class="d-flex gap-3 align-items-center" action="#!" method="POST">
+            <div class="booking-item d-flex flex-column">
+              <label for="checkin">Check in</label>
+              <input type="date" id="checkin" name="checkin" />
+            </div>
+
+            <div class="booking-item d-flex flex-column">
+              <label for="checkout">Check out</label>
+              <input type="date" id="checkout" name="checkout" />
+            </div>
+
+            <div class="booking-item d-flex flex-column">
+              <label for="rooms">Rooms</label>
+              <select id="rooms" name="rooms">
+                <option value="1">1 Room</option>
+                <option value="2">2 Rooms</option>
+                <option value="3">3 Rooms</option>
+                <option value="4">4 Rooms</option>
+              </select>
+            </div>
+
+            <div class="booking-item d-flex flex-column">
+              <label for="adults">Adults</label>
+              <select id="adults" name="adults">
+                <option value="1">1 Adult</option>
+                <option value="2">2 Adults</option>
+                <option value="3">3 Adults</option>
+                <option value="4">4 Adults</option>
+              </select>
+            </div>
+
+            <div class="booking-item d-flex flex-column">
+              <label for="children">Children</label>
+              <select id="children" name="children">
+                <option value="0">0 Children</option>
+                <option value="1">1 Child</option>
+                <option value="2">2 Children</option>
+                <option value="3">3 Children</option>
+                <option value="4">4 Children</option>
+              </select>
+            </div>
+
+            <div>
+              <button type="submit" class="btn-hotel-yellow-square">
+                Check Availability
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
-    <section id="services">
-      <div class="container"></div>
+    <section id="features">
+      <div class="container">
+        <div class="line-before-after">Hotel Feature</div>
+        <h3>Top Features</h3>
+        <p class="text-center mx-auto my-4">
+          Designed to balance comfort, elegance and practical hospitality with
+          the essential amenities guests expect from a premium coastal resort.
+        </p>
+        <div class="feature-items d-flex flex-wrap gap-4 justify-content-center">
+          <div class="feature-card">
+            <div class="feature-up"><i class="bi bi-archive"></i></div>
+            <div class="feature-down">
+              <h4>Luxury Rooms</h4>
+              <p>
+                Beautifully styled rooms with premium bedding and refined
+                interior details.
+              </p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-up"><i class="bi bi-cup-hot"></i></div>
+            <div class="feature-down">
+              <h4>Fine Dining</h4>
+              <p>
+                Fresh coastal cuisine, breakfast buffet service and all-day
+                dining options.
+              </p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-up"><i class="bi bi-flower1"></i></div>
+            <div class="feature-down">
+              <h4>Spa Retreat</h4>
+              <p>
+                Relax with wellness treatments, private massage sessions and
+                sauna access.
+              </p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-up"><i class="bi bi-car-front"></i></div>
+            <div class="feature-down">
+              <h4>Parking</h4>
+              <p>
+                Secure on-site parking with easy access to the lobby and guest
+                wings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="enjoy">
+      <div class="container">
+        <div class="enjoy-img">
+          <img class="img1" src="/assets/img/img1.avif" alt="img1" /><img class="img2" src="/assets/img/img2.avif" alt="img2" />
+        </div>
+        <div>
+          <div></div>
+          <div class="line-before-after">Enjoy Your Stay</div>
+          <h2>We Provide Best Place To Enjoy Your Time</h2>
+          <p>
+            Hotel is crafted as a modern resort experience with calm
+            architecture, curated views and a service philosophy focused on
+            comfort and detail. The design language combines relaxed luxury
+            with clear, usable spaces.
+          </p>
+          <p>
+            From intimate suites to larger family rooms, every area is planned
+            for vacation comfort, quiet evenings and smooth guest flow from
+            booking to check-out.
+          </p>
+          <ul>
+            <li>Premium sea-view rooms</li>
+            <li>Professional room service</li>
+            <li>Wellness and spa facilities</li>
+            <li>Private dining experiences</li>
+          </ul>
+          <div class="btn-hotel-yellow-rounded">
+            <a href="#!">Discover More</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact">

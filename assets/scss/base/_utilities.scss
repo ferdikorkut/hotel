@@ -1,11 +1,11 @@
-@use "../abstracts/variables";
+@use "../abstracts/variables" as v;
 
 // renkler
 .hotel-yellow {
-  color: variables.$hotel-yellow;
+  color: v.$hotel-yellow;
 }
 .hotel-yellow-hover {
-  color: variables.$hotel-yellow-hover;
+  color: v.$hotel-yellow-hover;
 }
 
 // before & after cizgileri
@@ -14,13 +14,13 @@
   align-items: center;
   gap: 0.75rem;
   text-transform: uppercase;
-  color: variables.$hotel-yellow;
+  color: v.$hotel-yellow;
   font-weight: bold;
   &::before,
   &::after {
     content: "";
     width: 2rem;
     height: 2px;
-    background-color: variables.$hotel-yellow-hover;
+    background-color: v.$hotel-yellow-hover;
   }
 }

@@ -1,8 +1,8 @@
-@use "../abstracts/variables";
-@use "../base/utilities";
+@use "../abstracts/variables" as v;
+@use "../base/utilities" as u;
 
 #hero {
-  background-image: variables.$linear-overlay, variables.$hero-background;
+  background-image: v.$linear-overlay, v.$hero-background;
   background-size: cover;
   background-position: center;
   min-height: 70vh;
@@ -11,7 +11,7 @@
     padding-left: 5rem;
     h1 {
       color: white;
-      font-size: 5rem;
+      font-size: v.$h1-font-size;
       font-weight: bold;
       text-transform: uppercase;
       text-wrap: unset;
@@ -24,6 +24,7 @@
   .button-group {
     margin-top: 2rem;
     display: flex;
+    align-items: center;
     gap: 1rem;
   }
 }

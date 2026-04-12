@@ -1,0 +1,39 @@
+@use "../abstracts/variables" as v;
+
+@mixin button($renk, $radius, $padding, $hover-renk) {
+  background-color: $renk;
+  border-radius: $radius;
+  color: v.$button-yazi-renk;
+  font-weight: bold;
+  border: none;
+  padding: $padding;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-2px);
+    background-color: $hover-renk;
+  }
+}
+
+@mixin box-genel-gorunum ($font-hizalama){
+  background-color: v.$box-arka-plan-renk;
+  border-radius: v.$box-radius;
+  box-shadow: v.$box-shadow;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+//   transition: all 0.3s ease;
+  div.feature-down {
+      padding: v.$box-padding;
+    text-align: $font-hizalama;
+    h4 {
+      font-weight: bold;
+      color: v.$h3-color;
+      font-size: v.$h4-font-size;
+    }
+    p {
+      padding-top: 0.5rem;
+    }
+  }
+}

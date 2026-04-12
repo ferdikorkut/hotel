@@ -20,7 +20,11 @@
 
 // 6. Sections — sıra HTML'deki section sırasıyla aynı olsun!
 @use "sections/hero";
+@use "sections/booking";
+@use "sections/features";
+@use "sections/enjoy";
 
-#services {
-  height: 500px;
+
+body {
+ background-color: variables.$bg-color;
 }

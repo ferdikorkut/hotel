@@ -1,31 +1,16 @@
-@use "../abstracts/variables";
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
 
 // butonlar
 .btn-hotel-yellow-rounded {
-  background-color: variables.$hotel-yellow;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 20px;
-  padding: 0.5rem 1.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  &:hover {
-    transform: translateY(-2px);
-    background-color: variables.$hotel-yellow-hover;
-  }
+  display: inline-block;
+  @include m.button(v.$hotel-yellow, v.$rounded-button-radius, 0.7rem 1.5rem, v.$hotel-yellow-hover);
 }
 .btn-hotel-gray-rounded {
-  background-color: variables.$hotel-gray;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 20px;
-  padding: 0.5rem 1.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  &:hover {
-    transform: translateY(-2px);
-    background-color: variables.$hotel-gray-hover;
-  }
+  display: inline-block;
+  @include m.button(v.$hotel-gray, v.$rounded-button-radius, 0.7rem 1.5rem, v.$hotel-gray-hover);
+}
+.btn-hotel-yellow-square {
+  display: inline-block;
+  @include m.button(v.$hotel-yellow, v.$square-button-radius, 1.4rem 1.3rem, v.$hotel-yellow-hover);
 }
