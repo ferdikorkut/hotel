@@ -12162,7 +12162,7 @@ header nav a:hover::after {
 }
 
 footer {
-  background-image: linear-gradient(rgba(4, 22, 53, 0.8), rgba(4, 22, 53, 0.8)), url("../../../assets/img/hero-bg.avif");
+  background-image: linear-gradient(rgba(4, 22, 53, 0.8), rgba(4, 22, 53, 0.8)), url("../img/hero-bg.avif");
   background-size: cover;
   background-position: center;
   padding: 3rem 5rem 1.5rem 5rem;
@@ -12206,7 +12206,7 @@ footer .container .footer-bottom {
 }
 
 #hero {
-  background-image: linear-gradient(90deg, rgba(4, 22, 53, 0.88) 0%, rgba(6, 33, 76, 0.58) 38%, rgba(10, 27, 60, 0.2) 100%), url("../../../assets/img/hero-bg.avif");
+  background-image: linear-gradient(90deg, rgba(4, 22, 53, 0.88) 0%, rgba(6, 33, 76, 0.58) 38%, rgba(10, 27, 60, 0.2) 100%), url("../img/hero-bg.avif");
   background-size: cover;
   background-position: center;
   min-height: 70vh;
@@ -12378,7 +12378,7 @@ select {
 }
 
 #counter {
-  background-image: linear-gradient(rgba(4, 22, 53, 0.7), rgba(4, 22, 53, 0.7)), url("../../../assets/img/counter-bg.avif");
+  background-image: linear-gradient(rgba(4, 22, 53, 0.7), rgba(4, 22, 53, 0.7)), url("../img/counter-bg.avif");
   background-size: cover;
   background-position: center;
   padding: 3rem 5rem 5rem 5rem;
@@ -12451,7 +12451,7 @@ select {
   display: flex;
   height: 250px;
   width: 100%;
-  background-image: url("../../../assets/img/card-bg1.avif");
+  background-image: url("../img/card-bg1.avif");
   background-size: cover;
   position: relative;
 }
@@ -12532,7 +12532,7 @@ select {
   display: flex;
   height: 250px;
   width: 100%;
-  background-image: url("../../../assets/img/card-bg2.avif");
+  background-image: url("../img/card-bg2.avif");
   background-size: cover;
   position: relative;
 }
@@ -12613,7 +12613,7 @@ select {
   display: flex;
   height: 250px;
   width: 100%;
-  background-image: url("../../../assets/img/card-bg3.avif");
+  background-image: url("../img/card-bg3.avif");
   background-size: cover;
   position: relative;
 }
@@ -12925,7 +12925,7 @@ select {
   display: flex;
   height: 250px;
   width: 100%;
-  background-image: url("../../../assets/img/team1.avif");
+  background-image: url("../img/team1.avif");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -13033,7 +13033,7 @@ select {
   display: flex;
   height: 250px;
   width: 100%;
-  background-image: url("../../../assets/img/team2.avif");
+  background-image: url("../img/team2.avif");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -13141,7 +13141,7 @@ select {
   display: flex;
   height: 250px;
   width: 100%;
-  background-image: url("../../../assets/img/team3.avif");
+  background-image: url("../img/team3.avif");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -13249,7 +13249,7 @@ select {
   display: flex;
   height: 250px;
   width: 100%;
-  background-image: url("../../../assets/img/team4.avif");
+  background-image: url("../img/team4.avif");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -13332,7 +13332,7 @@ select {
 }
 
 #special {
-  background-image: linear-gradient(rgba(4, 22, 53, 0.7), rgba(4, 22, 53, 0.7)), url("../../../assets/img/special-bg.avif");
+  background-image: linear-gradient(rgba(4, 22, 53, 0.7), rgba(4, 22, 53, 0.7)), url("../img/special-bg.avif");
   background-size: cover;
   background-position: center;
   padding: 3rem 5rem 4.7rem 5rem;
@@ -13512,7 +13512,7 @@ select {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../../assets/img/service1.avif");
+  background-image: url("../img/service1.avif");
   background-size: cover;
   background-position: center;
   transition: transform 0.4s ease;
@@ -13562,7 +13562,7 @@ select {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../../assets/img/service2.avif");
+  background-image: url("../img/service2.avif");
   background-size: cover;
   background-position: center;
   transition: transform 0.4s ease;
@@ -13612,7 +13612,7 @@ select {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../../assets/img/service3.avif");
+  background-image: url("../img/service3.avif");
   background-size: cover;
   background-position: center;
   transition: transform 0.4s ease;
@@ -13628,7 +13628,7 @@ select {
 }
 
 #testimonials {
-  background-image: linear-gradient(rgba(4, 22, 53, 0.7), rgba(4, 22, 53, 0.7)), url("../../../assets/img/testimonials-bg.avif");
+  background-image: linear-gradient(rgba(4, 22, 53, 0.7), rgba(4, 22, 53, 0.7)), url("../img/testimonials-bg.avif");
   background-size: cover;
   background-position: center;
   padding: 3rem 5rem 5rem 5rem;
@@ -13770,7 +13770,7 @@ select {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../../assets/img/news1.avif");
+  background-image: url("../img/news1.avif");
   background-size: cover;
   background-position: center;
   transition: transform 0.4s ease;
@@ -13828,7 +13828,7 @@ select {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../../assets/img/news2.avif");
+  background-image: url("../img/news2.avif");
   background-size: cover;
   background-position: center;
   transition: transform 0.4s ease;
@@ -13886,7 +13886,7 @@ select {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../../assets/img/news3.avif");
+  background-image: url("../img/news3.avif");
   background-size: cover;
   background-position: center;
   transition: transform 0.4s ease;
