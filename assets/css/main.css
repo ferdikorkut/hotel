@@ -12161,6 +12161,50 @@ header nav a:hover::after {
   width: 100%;
 }
 
+footer {
+  background-image: linear-gradient(rgba(4, 22, 53, 0.8), rgba(4, 22, 53, 0.8)), url("../../../assets/img/hero-bg.avif");
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 5rem 1.5rem 5rem;
+  color: white;
+}
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .container .footer-top {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+footer .container .footer-top > div {
+  flex: 1;
+  min-width: 0;
+}
+footer .container .footer-top h4 {
+  margin-bottom: 1rem;
+}
+footer .container .footer-top li {
+  margin-bottom: 0.5rem;
+}
+footer .container .footer-top li a {
+  display: block;
+  transition: color 0.2s ease;
+}
+footer .container .footer-top li a:hover {
+  color: #f4a300;
+}
+footer .container .footer-bottom {
+  padding-top: 20px;
+}
+
 #hero {
   background-image: linear-gradient(90deg, rgba(4, 22, 53, 0.88) 0%, rgba(6, 33, 76, 0.58) 38%, rgba(10, 27, 60, 0.2) 100%), url("../../../assets/img/hero-bg.avif");
   background-size: cover;
@@ -13869,7 +13913,6 @@ select {
   background-color: #f4a300;
   height: 8rem;
   padding: 2rem 0 5rem 0;
-  margin-bottom: 90px;
 }
 #newsletter .container {
   display: flex;
