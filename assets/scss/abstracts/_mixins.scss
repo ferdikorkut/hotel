@@ -75,7 +75,7 @@
   }
   &:hover {
     transform: translateY(-5px);
-    cursor: pointer;
+    // cursor: pointer;
   }
   .card-down {
     .stars {
@@ -119,7 +119,7 @@
   }
   &:hover {
     transform: scale(1.05);
-    cursor: pointer;
+    // cursor: pointer;
   }
   .card-down {
     .price {
@@ -176,7 +176,7 @@
       opacity: 1;
       transform: translateY(0px);
     }
-    cursor: pointer;
+    // cursor: pointer;
   }
   .card-down {
     h5 {
@@ -202,5 +202,39 @@
   transition: background-color 0.3s ease;
   &:hover {
         background-color: v.$h2-color;
+        cursor: pointer;
     }
+}
+@mixin service-card($background) {
+  @include box-genel-gorunum(left);
+  transition: all 0.3s ease;
+  .card-up {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: $background;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.4s ease;
+    }
+  }
+  &:hover {
+    .card-up::before {
+      transform: scale(1.1);
+    }
+  }
+  .card-down {
+    h4 {
+        color: v.$h2-color;
+    }
+    p {
+      padding-bottom: 1rem;
+    }
+  }
 }

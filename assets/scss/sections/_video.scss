@@ -47,8 +47,6 @@
     border-radius: 50%;
     color: v.$hotel-yellow-color;
     cursor: pointer;
-    &:hover {
-    }
     &::before {
       content: "";
       position: absolute;

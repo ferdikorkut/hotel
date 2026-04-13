@@ -12436,7 +12436,6 @@ select {
 }
 .room-items .room-card-1:hover {
   transform: translateY(-5px);
-  cursor: pointer;
 }
 .room-items .room-card-1 .card-down .stars {
   padding: 5px 0;
@@ -12518,7 +12517,6 @@ select {
 }
 .room-items .room-card-2:hover {
   transform: translateY(-5px);
-  cursor: pointer;
 }
 .room-items .room-card-2 .card-down .stars {
   padding: 5px 0;
@@ -12600,7 +12598,6 @@ select {
 }
 .room-items .room-card-3:hover {
   transform: translateY(-5px);
-  cursor: pointer;
 }
 .room-items .room-card-3 .card-down .stars {
   padding: 5px 0;
@@ -12680,7 +12677,6 @@ select {
 }
 .plan-items .plan-card-1:hover {
   transform: scale(1.05);
-  cursor: pointer;
 }
 .plan-items .plan-card-1 .card-down .price {
   font-family: "Cormorant Garamond", serif;
@@ -12736,7 +12732,6 @@ select {
 }
 .plan-items .plan-card-2:hover {
   transform: scale(1.05);
-  cursor: pointer;
 }
 .plan-items .plan-card-2 .card-down .price {
   font-family: "Cormorant Garamond", serif;
@@ -12792,7 +12787,6 @@ select {
 }
 .plan-items .plan-card-3:hover {
   transform: scale(1.05);
-  cursor: pointer;
 }
 .plan-items .plan-card-3 .card-down .price {
   font-family: "Cormorant Garamond", serif;
@@ -12919,6 +12913,7 @@ select {
 }
 .team-info .team-person-1 .card-up .social .social-1:hover {
   background-color: #0b2b64;
+  cursor: pointer;
 }
 .team-info .team-person-1 .card-up .social .social-2 {
   background-color: #f4a300;
@@ -12937,6 +12932,7 @@ select {
 }
 .team-info .team-person-1 .card-up .social .social-2:hover {
   background-color: #0b2b64;
+  cursor: pointer;
 }
 .team-info .team-person-1 .card-up .social .social-3 {
   background-color: #f4a300;
@@ -12955,13 +12951,11 @@ select {
 }
 .team-info .team-person-1 .card-up .social .social-3:hover {
   background-color: #0b2b64;
+  cursor: pointer;
 }
 .team-info .team-person-1:hover .social {
   opacity: 1;
   transform: translateY(0px);
-}
-.team-info .team-person-1:hover {
-  cursor: pointer;
 }
 .team-info .team-person-1 .card-down h5 {
   color: #0b2b64;
@@ -13027,6 +13021,7 @@ select {
 }
 .team-info .team-person-2 .card-up .social .social-1:hover {
   background-color: #0b2b64;
+  cursor: pointer;
 }
 .team-info .team-person-2 .card-up .social .social-2 {
   background-color: #f4a300;
@@ -13045,6 +13040,7 @@ select {
 }
 .team-info .team-person-2 .card-up .social .social-2:hover {
   background-color: #0b2b64;
+  cursor: pointer;
 }
 .team-info .team-person-2 .card-up .social .social-3 {
   background-color: #f4a300;
@@ -13063,13 +13059,11 @@ select {
 }
 .team-info .team-person-2 .card-up .social .social-3:hover {
   background-color: #0b2b64;
+  cursor: pointer;
 }
 .team-info .team-person-2:hover .social {
   opacity: 1;
   transform: translateY(0px);
-}
-.team-info .team-person-2:hover {
-  cursor: pointer;
 }
 .team-info .team-person-2 .card-down h5 {
   color: #0b2b64;
@@ -13135,6 +13129,7 @@ select {
 }
 .team-info .team-person-3 .card-up .social .social-1:hover {
   background-color: #0b2b64;
+  cursor: pointer;
 }
 .team-info .team-person-3 .card-up .social .social-2 {
   background-color: #f4a300;
@@ -13153,6 +13148,7 @@ select {
 }
 .team-info .team-person-3 .card-up .social .social-2:hover {
   background-color: #0b2b64;
+  cursor: pointer;
 }
 .team-info .team-person-3 .card-up .social .social-3 {
   background-color: #f4a300;
@@ -13171,13 +13167,11 @@ select {
 }
 .team-info .team-person-3 .card-up .social .social-3:hover {
   background-color: #0b2b64;
+  cursor: pointer;
 }
 .team-info .team-person-3:hover .social {
   opacity: 1;
   transform: translateY(0px);
-}
-.team-info .team-person-3:hover {
-  cursor: pointer;
 }
 .team-info .team-person-3 .card-down h5 {
   color: #0b2b64;
@@ -13243,6 +13237,7 @@ select {
 }
 .team-info .team-person-4 .card-up .social .social-1:hover {
   background-color: #0b2b64;
+  cursor: pointer;
 }
 .team-info .team-person-4 .card-up .social .social-2 {
   background-color: #f4a300;
@@ -13261,6 +13256,7 @@ select {
 }
 .team-info .team-person-4 .card-up .social .social-2:hover {
   background-color: #0b2b64;
+  cursor: pointer;
 }
 .team-info .team-person-4 .card-up .social .social-3 {
   background-color: #f4a300;
@@ -13279,13 +13275,11 @@ select {
 }
 .team-info .team-person-4 .card-up .social .social-3:hover {
   background-color: #0b2b64;
+  cursor: pointer;
 }
 .team-info .team-person-4:hover .social {
   opacity: 1;
   transform: translateY(0px);
-}
-.team-info .team-person-4:hover {
-  cursor: pointer;
 }
 .team-info .team-person-4 .card-down h5 {
   color: #0b2b64;
@@ -13421,6 +13415,174 @@ select {
     opacity: 0;
   }
 }
+#services {
+  margin-bottom: 90px;
+}
+#services .container {
+  margin-top: 2rem;
+}
+#services .container h3 {
+  color: #0b2b64;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#services .container > p {
+  max-width: 650px;
+  color: #808493;
+  padding-bottom: 1.5rem;
+}
+
+.service-items .service-card-1 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.service-items .service-card-1 div.card-down {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: left;
+}
+.service-items .service-card-1 div.card-down h4 {
+  font-weight: bold;
+  color: #0b2b64;
+  font-size: 2rem;
+}
+.service-items .service-card-1 div.card-down p {
+  padding-top: 0.5rem;
+}
+.service-items .service-card-1 {
+  transition: all 0.3s ease;
+}
+.service-items .service-card-1 .card-up {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.service-items .service-card-1 .card-up::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../../assets/img/service1.avif");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+.service-items .service-card-1:hover .card-up::before {
+  transform: scale(1.1);
+}
+.service-items .service-card-1 .card-down h4 {
+  color: #0b2b64;
+}
+.service-items .service-card-1 .card-down p {
+  padding-bottom: 1rem;
+}
+.service-items .service-card-2 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.service-items .service-card-2 div.card-down {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: left;
+}
+.service-items .service-card-2 div.card-down h4 {
+  font-weight: bold;
+  color: #0b2b64;
+  font-size: 2rem;
+}
+.service-items .service-card-2 div.card-down p {
+  padding-top: 0.5rem;
+}
+.service-items .service-card-2 {
+  transition: all 0.3s ease;
+}
+.service-items .service-card-2 .card-up {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.service-items .service-card-2 .card-up::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../../assets/img/service2.avif");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+.service-items .service-card-2:hover .card-up::before {
+  transform: scale(1.1);
+}
+.service-items .service-card-2 .card-down h4 {
+  color: #0b2b64;
+}
+.service-items .service-card-2 .card-down p {
+  padding-bottom: 1rem;
+}
+.service-items .service-card-3 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.service-items .service-card-3 div.card-down {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: left;
+}
+.service-items .service-card-3 div.card-down h4 {
+  font-weight: bold;
+  color: #0b2b64;
+  font-size: 2rem;
+}
+.service-items .service-card-3 div.card-down p {
+  padding-top: 0.5rem;
+}
+.service-items .service-card-3 {
+  transition: all 0.3s ease;
+}
+.service-items .service-card-3 .card-up {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.service-items .service-card-3 .card-up::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../../assets/img/service3.avif");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+.service-items .service-card-3:hover .card-up::before {
+  transform: scale(1.1);
+}
+.service-items .service-card-3 .card-down h4 {
+  color: #0b2b64;
+}
+.service-items .service-card-3 .card-down p {
+  padding-bottom: 1rem;
+}
+
 body {
   background-color: #f7f7f7;
 }/*# sourceMappingURL=main.css.map */
