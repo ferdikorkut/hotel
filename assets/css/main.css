@@ -12058,7 +12058,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .hotel-yellow {
@@ -13674,6 +13674,195 @@ select {
 .testimonials-items .testimonials-card-1 .card-down .kimlik p {
   padding: 0;
   margin: 0;
+}
+
+#news {
+  margin-bottom: 90px;
+}
+#news .container {
+  margin-top: 2rem;
+}
+#news .container h3 {
+  color: #0b2b64;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#news .container > p {
+  max-width: 650px;
+  color: #808493;
+  padding-bottom: 1.5rem;
+}
+
+.news-items .news-card-1 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.news-items .news-card-1 div.card-down {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: left;
+}
+.news-items .news-card-1 div.card-down h4 {
+  font-weight: bold;
+  color: #0b2b64;
+  font-size: 2rem;
+}
+.news-items .news-card-1 div.card-down p {
+  padding-top: 0.5rem;
+}
+.news-items .news-card-1 {
+  transition: all 0.3s ease;
+}
+.news-items .news-card-1 .card-up {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.news-items .news-card-1 .card-up::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../../assets/img/service1.avif");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+.news-items .news-card-1:hover .card-up::before {
+  transform: scale(1.1);
+}
+.news-items .news-card-1:hover {
+  transform: translateY(-10px);
+}
+.news-items .news-card-1 .card-down {
+  padding-top: 0.5rem !important;
+}
+.news-items .news-card-1 .card-down h6 {
+  color: #0b2b64;
+  font-weight: bold;
+}
+.news-items .news-card-1 .card-down p {
+  padding-bottom: 1rem;
+}
+.news-items .news-card-2 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.news-items .news-card-2 div.card-down {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: left;
+}
+.news-items .news-card-2 div.card-down h4 {
+  font-weight: bold;
+  color: #0b2b64;
+  font-size: 2rem;
+}
+.news-items .news-card-2 div.card-down p {
+  padding-top: 0.5rem;
+}
+.news-items .news-card-2 {
+  transition: all 0.3s ease;
+}
+.news-items .news-card-2 .card-up {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.news-items .news-card-2 .card-up::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../../assets/img/service2.avif");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+.news-items .news-card-2:hover .card-up::before {
+  transform: scale(1.1);
+}
+.news-items .news-card-2:hover {
+  transform: translateY(-10px);
+}
+.news-items .news-card-2 .card-down {
+  padding-top: 0.5rem !important;
+}
+.news-items .news-card-2 .card-down h6 {
+  color: #0b2b64;
+  font-weight: bold;
+}
+.news-items .news-card-2 .card-down p {
+  padding-bottom: 1rem;
+}
+.news-items .news-card-3 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.news-items .news-card-3 div.card-down {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: left;
+}
+.news-items .news-card-3 div.card-down h4 {
+  font-weight: bold;
+  color: #0b2b64;
+  font-size: 2rem;
+}
+.news-items .news-card-3 div.card-down p {
+  padding-top: 0.5rem;
+}
+.news-items .news-card-3 {
+  transition: all 0.3s ease;
+}
+.news-items .news-card-3 .card-up {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.news-items .news-card-3 .card-up::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../../assets/img/service3.avif");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+.news-items .news-card-3:hover .card-up::before {
+  transform: scale(1.1);
+}
+.news-items .news-card-3:hover {
+  transform: translateY(-10px);
+}
+.news-items .news-card-3 .card-down {
+  padding-top: 0.5rem !important;
+}
+.news-items .news-card-3 .card-down h6 {
+  color: #0b2b64;
+  font-weight: bold;
+}
+.news-items .news-card-3 .card-down p {
+  padding-bottom: 1rem;
 }
 
 body {

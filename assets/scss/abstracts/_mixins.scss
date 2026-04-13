@@ -288,3 +288,39 @@
     }
   }
 }
+@mixin news-card($background) {
+  @include box-genel-gorunum(left);
+  transition: all 0.3s ease;
+  .card-up {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: $background;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.4s ease;
+    }
+  }
+  &:hover {
+    .card-up::before {
+      transform: scale(1.1);
+    }
+    transform: translateY(-10px);
+  }
+  .card-down {
+    padding-top: 0.5rem !important;
+    h6 {
+        color: v.$h2-color;
+        font-weight: bold;
+    }
+    p {
+      padding-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as v;
+@use "../base/utilities" as u;
+@use "../abstracts/mixins" as m;
+
+#news {
+  margin-bottom: 90px;
+  .container {
+    margin-top: 2rem;
+    h3 {
+      color: v.$h3-color;
+      font-size: v.$h3-font-size;
+      font-weight: bold;
+    }
+    > p {
+      max-width: 650px;
+      color: v.$hotel-gray;
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+.news-items {
+  .news-card-1 {
+    @include m.news-card(v.$img-services1);
+  }
+  .news-card-2 {
+    @include m.news-card(v.$img-services2);
+  }
+  .news-card-3 {
+    @include m.news-card(v.$img-services3);
+  }
+
+}
