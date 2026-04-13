@@ -20,13 +20,13 @@
 }
 .news-items {
   .news-card-1 {
-    @include m.news-card(v.$img-services1);
+    @include m.news-card(v.$img-news1);
   }
   .news-card-2 {
-    @include m.news-card(v.$img-services2);
+    @include m.news-card(v.$img-news2);
   }
   .news-card-3 {
-    @include m.news-card(v.$img-services3);
+    @include m.news-card(v.$img-news3);
   }
 
 }

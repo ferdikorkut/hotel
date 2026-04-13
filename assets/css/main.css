@@ -13584,14 +13584,11 @@ select {
 }
 
 #testimonials {
-  background-image: linear-gradient(rgba(4, 22, 53, 0.7), rgba(4, 22, 53, 0.7)), url("../../../assets/img/counter-bg.avif");
+  background-image: linear-gradient(rgba(4, 22, 53, 0.7), rgba(4, 22, 53, 0.7)), url("../../../assets/img/testimonials-bg.avif");
   background-size: cover;
   background-position: center;
   padding: 3rem 5rem 5rem 5rem;
   margin-bottom: 90px;
-}
-#testimonials .container span {
-  color: white !important;
 }
 #testimonials .container {
   margin-top: 2rem;
@@ -13729,7 +13726,7 @@ select {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../../assets/img/service1.avif");
+  background-image: url("../../../assets/img/news1.avif");
   background-size: cover;
   background-position: center;
   transition: transform 0.4s ease;
@@ -13746,6 +13743,7 @@ select {
 .news-items .news-card-1 .card-down h6 {
   color: #0b2b64;
   font-weight: bold;
+  margin-bottom: 0.3rem;
 }
 .news-items .news-card-1 .card-down p {
   padding-bottom: 1rem;
@@ -13786,7 +13784,7 @@ select {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../../assets/img/service2.avif");
+  background-image: url("../../../assets/img/news2.avif");
   background-size: cover;
   background-position: center;
   transition: transform 0.4s ease;
@@ -13803,6 +13801,7 @@ select {
 .news-items .news-card-2 .card-down h6 {
   color: #0b2b64;
   font-weight: bold;
+  margin-bottom: 0.3rem;
 }
 .news-items .news-card-2 .card-down p {
   padding-bottom: 1rem;
@@ -13843,7 +13842,7 @@ select {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../../assets/img/service3.avif");
+  background-image: url("../../../assets/img/news3.avif");
   background-size: cover;
   background-position: center;
   transition: transform 0.4s ease;
@@ -13860,9 +13859,69 @@ select {
 .news-items .news-card-3 .card-down h6 {
   color: #0b2b64;
   font-weight: bold;
+  margin-bottom: 0.3rem;
 }
 .news-items .news-card-3 .card-down p {
   padding-bottom: 1rem;
+}
+
+#newsletter {
+  background-color: #f4a300;
+  height: 8rem;
+  padding: 2rem 0 5rem 0;
+  margin-bottom: 90px;
+}
+#newsletter .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  gap: 2rem;
+}
+#newsletter .container .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#newsletter .container .newsletter h4 {
+  font-weight: bold;
+}
+#newsletter .container .form {
+  flex: 1;
+}
+#newsletter .container .form form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+#newsletter .container .form form input {
+  flex: 1;
+  height: 54px;
+  border-radius: 999px;
+  border: none;
+  padding: 0 22px;
+  outline: none;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #9397a2;
+}
+#newsletter .container .form form button {
+  white-space: nowrap;
+  min-height: 50px;
+  padding: 0 28px;
+  border-radius: 50px;
+  border: none;
+  background: #fff;
+  color: #0b2b64;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+#newsletter .container .form form button:hover {
+  background-color: #0b2b64;
+  color: white;
 }
 
 body {

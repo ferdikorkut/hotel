@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as v;
+@use "../base/utilities" as u;
+@use "../abstracts/mixins" as m;
+
+#newsletter {
+  background-color: v.$hotel-yellow-color;
+  height: 8rem;
+  padding: 2rem 0 5rem 0;
+  margin-bottom: 90px;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    gap: 2rem;
+    .newsletter {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      h4 {
+        font-weight: bold;
+      }
+    }
+    .form {
+      flex: 1;
+      form {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        input {
+          flex: 1;
+          height: 54px;
+          border-radius: 999px;
+          border: none;
+          padding: 0 22px;
+          outline: none;
+          font-size: 1rem;
+          background-color: #fff;
+          color: v.$hotel-gray-hover;
+        }
+        button {
+          white-space: nowrap;
+          min-height: 50px;
+          padding: 0 28px;
+          border-radius: 50px;
+          border: none;
+          background: #fff;
+          color: v.$h3-color;
+          cursor: pointer;
+          transition: 0.25s ease;
+          &:hover {
+            background-color: v.$h3-color;
+            color: v.$button-yazi-renk;
+          }
+        }
+      }
+    }
+  }
+}
