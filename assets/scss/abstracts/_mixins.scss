@@ -238,3 +238,53 @@
     }
   }
 }
+@mixin testimonials-card($background, $badge-rengi) {
+  @include box-genel-gorunum(left);
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    // cursor: pointer;
+  }
+  .card-down {
+    .stars {
+      padding: 5px 0;
+      i {
+        color: v.$hotel-yellow-color;
+        &::after {
+          content: " ";
+        }
+      }
+    }
+    p {
+      padding-bottom: 1rem;
+    }
+    .kimlik {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+        .picture{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+              height: 100%;
+              object-fit: cover;
+            }
+        }
+        h5 {
+            font-family: "Inter", serif;
+      font-size: 1rem;
+      color: v.$h2-color;
+      font-weight: bold;
+        }
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+    }
+  }
+}

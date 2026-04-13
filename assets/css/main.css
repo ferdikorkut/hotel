@@ -13583,6 +13583,99 @@ select {
   padding-bottom: 1rem;
 }
 
+#testimonials {
+  background-image: linear-gradient(rgba(4, 22, 53, 0.7), rgba(4, 22, 53, 0.7)), url("../../../assets/img/counter-bg.avif");
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 5rem 5rem 5rem;
+  margin-bottom: 90px;
+}
+#testimonials .container span {
+  color: white !important;
+}
+#testimonials .container {
+  margin-top: 2rem;
+}
+#testimonials .container h3 {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#testimonials .container > p {
+  max-width: 650px;
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+.testimonials-items .testimonials-card-1 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.testimonials-items .testimonials-card-1 div.card-down {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: left;
+}
+.testimonials-items .testimonials-card-1 div.card-down h4 {
+  font-weight: bold;
+  color: #0b2b64;
+  font-size: 2rem;
+}
+.testimonials-items .testimonials-card-1 div.card-down p {
+  padding-top: 0.5rem;
+}
+.testimonials-items .testimonials-card-1 {
+  transition: all 0.3s ease;
+}
+.testimonials-items .testimonials-card-1:hover {
+  transform: translateY(-5px);
+}
+.testimonials-items .testimonials-card-1 .card-down .stars {
+  padding: 5px 0;
+}
+.testimonials-items .testimonials-card-1 .card-down .stars i {
+  color: #f4a300;
+}
+.testimonials-items .testimonials-card-1 .card-down .stars i::after {
+  content: " ";
+}
+.testimonials-items .testimonials-card-1 .card-down p {
+  padding-bottom: 1rem;
+}
+.testimonials-items .testimonials-card-1 .card-down .kimlik {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonials-items .testimonials-card-1 .card-down .kimlik .picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonials-items .testimonials-card-1 .card-down .kimlik .picture img {
+  height: 100%;
+  object-fit: cover;
+}
+.testimonials-items .testimonials-card-1 .card-down .kimlik h5 {
+  font-family: "Inter", serif;
+  font-size: 1rem;
+  color: #0b2b64;
+  font-weight: bold;
+}
+.testimonials-items .testimonials-card-1 .card-down .kimlik p {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #f7f7f7;
 }/*# sourceMappingURL=main.css.map */
