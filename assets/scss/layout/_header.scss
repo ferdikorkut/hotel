@@ -5,9 +5,19 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 100;
 
   nav {
-    a {
+    // Mobilde menü açıldığında koyu arka plan — linkler görünsün diye
+    .navbar-collapse.show,
+    .navbar-collapse.collapsing {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    a:not(.navbar-brand) {
       transition: all 0.3s ease;
       position: relative;
       &.active {

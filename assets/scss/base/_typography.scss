@@ -19,9 +19,15 @@ h1 {
 }
 h2 {
   font-size: v.$h2-font-size;
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
 }
 h3 {
   font-size: v.$h3-font-size;
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
 }
 h4 {
   font-size: v.$h4-font-size;

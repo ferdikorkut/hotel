@@ -4,32 +4,37 @@
 
 #partners {
   background-color: v.$hotel-yellow-color;
-  height: 14rem;
-  padding: 2rem 0 5rem 0;
+  // Sabit yükseklik tamamen kaldırıldı — içerik ne kadar tutarsa o kadar
+  height: auto;
+  padding: 2rem 0;
   margin-bottom: 90px;
   .container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     color: white;
     font-weight: bold;
     gap: 1.5rem;
     .partners {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      text-transform: uppercase;
+      display: grid;
+      // Desktop: 6 eşit sütun (tek satır)
+      grid-template-columns: repeat(6, 1fr);
       gap: 1rem;
       width: 100%;
+      // 1199px altında: 3+3
+      @media (max-width: 1199.98px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      // Mobil: 2+2+2
+      @media (max-width: 575.98px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
       div {
         background-color: white;
         text-align: center;
         color: v.$h2-color;
-        width: 100%;
         padding: 20px 40px;
         border-radius: v.$square-button-radius;
-        flex: 1;
       }
     }
   }

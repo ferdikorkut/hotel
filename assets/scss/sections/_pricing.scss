@@ -19,13 +19,46 @@
   }
 }
 .plan-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 991.98px) and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    @include m.grid-center-lone-item;
+  }
+  @media (max-width: 767.98px) {
+    grid-template-columns: minmax(auto, 350px);
+    justify-content: center;
+  }
+
   .plan-card-1 {
     @include m.plan-card (v.$hotel-yellow-color);
+    min-width: unset; max-width: none; width: 100%;
   }
   .plan-card-2 {
-     @include m.plan-card (v.$badge-popular-color);
+    @include m.plan-card (v.$badge-popular-color);
+    min-width: unset; max-width: none; width: 100%;
   }
   .plan-card-3 {
-     @include m.plan-card (v.$hotel-yellow-color);
+    @include m.plan-card (v.$hotel-yellow-color);
+    min-width: unset; max-width: none; width: 100%;
+  }
+
+  [class^="plan-card-"] .card-down {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    // h4 hemen altındaki p = alt başlık
+    // min-height: 2 satır garantisi → tüm kartlar aynı hizada devam eder
+    h4 + p {
+      min-height: 3rem;
+    }
+
+    .btn-hotel-yellow-rounded {
+      margin-top: auto;
+      align-self: center;
+    }
   }
 }

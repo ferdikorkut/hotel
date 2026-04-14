@@ -19,16 +19,40 @@
   }
 }
 .team-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 1199.98px) and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 767.98px) {
+    grid-template-columns: minmax(auto, 350px);
+    justify-content: center;
+  }
+
   .team-person-1 {
     @include m.team-card(v.$img-person1);
+    min-width: unset;
+    max-width: none;
+    width: 100%;
   }
   .team-person-2 {
     @include m.team-card(v.$img-person2);
+    min-width: unset;
+    max-width: none;
+    width: 100%;
   }
   .team-person-3 {
     @include m.team-card(v.$img-person3);
+    min-width: unset;
+    max-width: none;
+    width: 100%;
   }
   .team-person-4 {
     @include m.team-card(v.$img-person4);
+    min-width: unset;
+    max-width: none;
+    width: 100%;
   }
 }

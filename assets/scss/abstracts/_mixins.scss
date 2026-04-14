@@ -1,5 +1,15 @@
 @use "../abstracts/variables" as v;
 
+// 2 sütunlu grid'de yalnız kalan son kartı ortalar
+// last-child:nth-child(odd) → son eleman tek sayılı sıradaysa = yalnız demek
+@mixin grid-center-lone-item {
+  & > *:last-child:nth-child(odd) {
+    grid-column: 1 / -1;       // tüm satırı kapla
+    justify-self: center;      // ortaya al
+    width: calc(50% - 0.75rem); // diğer kartlarla aynı genişlik
+  }
+}
+
 @mixin button($renk, $radius, $padding, $hover-renk) {
   background-color: $renk;
   border-radius: $radius;
@@ -20,6 +30,11 @@
   border-radius: v.$box-radius;
   box-shadow: v.$box-shadow;
   flex: 1;
+  // min-width: flex-wrap'ın tetiklenmesi için gereken eşik
+  // Kart bu değerin altına inemez → container daraldığında alta iner
+  min-width: 260px;
+  // max-width: kart çok geniş büyümesin (2 kart yan yana olduğunda)
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,6 +113,16 @@
         li {
           display: flex;
           gap: 5px;
+          font-size: 0.78rem;
+          // Sığmadığında: ikon üste, yazı alta
+          @media (max-width: 1199.98px) and (min-width: 768px) {
+            flex: 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            gap: 2px;
+          }
         }
       }
     }

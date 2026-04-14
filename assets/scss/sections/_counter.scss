@@ -7,13 +7,21 @@
   background-size: cover;
   background-position: center;
   padding: 3rem 5rem 5rem 5rem;
+  @media (max-width: 767.98px) {
+    padding: 2rem 1.5rem 3rem 1.5rem;
+  }
   margin-bottom: 90px;
   .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap; // mobilde sığmazsa alta geç
     gap: 3rem;
     & > div {
       flex: 1;
+      // sm (576px) altında: 2 kolon → her kutu %40+ genişlik al = satırda 2 sığar
+      @media (max-width: 575.98px) {
+        flex: 1 1 40%;
+      }
     }
   }
   .number, .text {

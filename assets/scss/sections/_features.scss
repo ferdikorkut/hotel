@@ -20,8 +20,26 @@ margin-bottom: 90px;
   }
 }
 .feature-items {
+  // CSS Grid: sütunlar her zaman eşit genişlikte
+  // Flex'te yalnız kalan kart büyüyordu — Grid'de bu sorun yok
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); // desktop: 4 eşit sütun
+  gap: 1.5rem;
+
+  @media (max-width: 1199.98px) and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); // tablet: 2x2
+  }
+  @media (max-width: 767.98px) {
+    grid-template-columns: minmax(auto, 350px);
+    justify-content: center;
+  }
+
   .feature-card {
     @include m.box-genel-gorunum(center);
+    // Grid içinde flex mixin değerleri anlamsız — override et
+    min-width: unset;
+    max-width: none;
+    width: 100%;
     .card-up {
       display: flex;
       align-items: center;

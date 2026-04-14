@@ -9,13 +9,26 @@
 
   .container {
     padding-left: 5rem;
+    // lg altında: sol padding'i azalt, ortala
+    @media (max-width: 991.98px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
     h1 {
       color: white;
-      font-size: v.$h1-font-size;
+      font-size: v.$h1-font-size; // desktop: 5rem
       font-weight: bold;
       text-transform: uppercase;
       text-wrap: unset;
       max-width: 1000px;
+      // Kademeli küçülme: tablet → 3rem, mobil → 2.2rem
+      @media (max-width: 991.98px) { font-size: 3rem; text-align: center; }
+      @media (max-width: 575.98px) { font-size: 2.2rem; }
+      .hero-break {
+        @media (max-width: 991.98px) {
+          display: block; // "And Resort" her zaman alt satırda kalır
+        }
+      }
     }
     p {
       max-width: 1000px;
@@ -26,5 +39,13 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    @media (max-width: 991.98px) {
+      justify-content: center;
+    }
+    // Çok küçük ekranlarda butonları alt alta al
+    @media (max-width: 400px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

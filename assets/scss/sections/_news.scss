@@ -19,14 +19,41 @@
   }
 }
 .news-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 991.98px) and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    @include m.grid-center-lone-item;
+  }
+  @media (max-width: 767.98px) {
+    grid-template-columns: minmax(auto, 350px);
+    justify-content: center;
+  }
+
   .news-card-1 {
     @include m.news-card(v.$img-news1);
+    min-width: unset; max-width: none; width: 100%;
   }
   .news-card-2 {
     @include m.news-card(v.$img-news2);
+    min-width: unset; max-width: none; width: 100%;
   }
   .news-card-3 {
     @include m.news-card(v.$img-news3);
+    min-width: unset; max-width: none; width: 100%;
   }
 
+  // card-down flex column → margin-top: auto butonu her zaman alta yapıştırır
+  [class^="news-card-"] .card-down {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .btn-hotel-yellow-rounded {
+      margin-top: auto;
+      align-self: flex-start; // içerik kadar genişlik, tam satır değil
+    }
+  }
 }

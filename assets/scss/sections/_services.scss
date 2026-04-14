@@ -19,14 +19,40 @@
   }
 }
 .service-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 991.98px) and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    @include m.grid-center-lone-item;
+  }
+  @media (max-width: 767.98px) {
+    grid-template-columns: minmax(auto, 350px);
+    justify-content: center;
+  }
+
   .service-card-1 {
     @include m.service-card(v.$img-services1);
+    min-width: unset; max-width: none; width: 100%;
   }
   .service-card-2 {
     @include m.service-card(v.$img-services2);
+    min-width: unset; max-width: none; width: 100%;
   }
   .service-card-3 {
     @include m.service-card(v.$img-services3);
+    min-width: unset; max-width: none; width: 100%;
   }
 
+  [class^="service-card-"] .card-down {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .btn-hotel-yellow-rounded {
+      margin-top: auto;
+      align-self: flex-start;
+    }
+  }
 }

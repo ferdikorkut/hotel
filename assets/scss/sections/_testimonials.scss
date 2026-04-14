@@ -6,7 +6,7 @@
     background-image: v.$solid-overlay, v.$testimonials-background;
   background-size: cover;
   background-position: center;
-  padding: 3rem 5rem 5rem 5rem;
+  padding: 3rem 0 5rem 0;
   margin-bottom: 90px;
   .container {
     span {
@@ -26,8 +26,18 @@
   }
 }
 .testimonials-items {
-  .testimonials-card-1 {
-    @include m.testimonials-card(v.$card1-background, v.$badge-popular-color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 767.98px) {
+    grid-template-columns: 1fr;
   }
 
+  .testimonials-card-1 {
+    @include m.testimonials-card(v.$card1-background, v.$badge-popular-color);
+    min-width: unset;
+    max-width: none;
+    width: 100%;
+  }
 }

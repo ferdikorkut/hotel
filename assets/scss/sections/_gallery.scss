@@ -30,14 +30,19 @@ margin-bottom: 90px;
     box-shadow: v.$box-shadow;
     min-width: 200px;
     height: 210px;
-    flex: 1 1 calc(25% - 20px);
+    flex: 1 1 calc(25% - 20px); // desktop: 4 sütun
     cursor: pointer;
     transition: all 0.3s ease;
     &:hover {
       transform: scale(1.03);
       filter: brightness(0.8);
     }
-
+    // sm altında: 2 sütuna geç — 8 resim 4 satırda görünür, daha kullanışlı
+    @media (max-width: 575.98px) {
+      flex: 1 1 calc(50% - 13px);
+      min-width: unset;
+      height: 150px;
+    }
   }
 
 

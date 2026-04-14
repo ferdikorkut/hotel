@@ -11,6 +11,10 @@
     & > div {
       flex: 1;
     }
+    // lg (992px) altında: iki kolon alt alta geçsin
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+    }
   }
   h2 {
     color: v.$h2-color;
@@ -47,6 +51,11 @@
       margin-left: -100px;
       object-fit: cover;
       border-radius: v.$box-radius;
+      // md altında: negatif margin'i sıfırla, resim normal sola yaslanır
+      @media (max-width: 767.98px) {
+        margin-left: 0;
+        width: 100%;
+      }
     }
     .img2 {
       position: absolute;

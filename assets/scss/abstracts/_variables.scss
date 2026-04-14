@@ -53,11 +53,11 @@ $button-yazi-renk: white;
 $rounded-button-radius: 25px;
 $square-button-radius: 10px;
 
-//font büyüklükleri
-$h1-font-size: 5rem;
-$h2-font-size: 4rem;
-$h3-font-size: 3rem;
-$h4-font-size: 2rem;
-$h5-font-size: 1.6rem;
-$h6-font-size: 1.4rem;
+//font büyüklükleri — clamp(mobil-min, vw-bazlı, desktop-max)
+$h1-font-size: clamp(2rem, 7vw, 5rem);
+$h2-font-size: clamp(1.8rem, 5.5vw, 4rem);
+$h3-font-size: clamp(1.6rem, 4.5vw, 3rem);
+$h4-font-size: clamp(1.3rem, 3vw, 2rem);
+$h5-font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+$h6-font-size: clamp(1rem, 2vw, 1.4rem);
 

@@ -12,33 +12,47 @@
 
 <body>
   <header>
-    <div class="container d-flex justify-content-between align-items-center py-3">
-      <div>
-        <a href="#!" class="fs-2 text-white fw-bold"><i class="bi bi-signpost-2-fill me-1 fs-2 hotel-yellow"></i>
-          HOTEL</a>
+    <!-- navbar-expand-lg: lg altında hamburger göster, lg üstünde linkleri aç -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+
+        <!-- Logo -->
+        <a href="#!" class="navbar-brand fs-2 text-white fw-bold">
+          <i class="bi bi-signpost-2-fill me-1 fs-2 hotel-yellow"></i> HOTEL
+        </a>
+
+        <!-- Hamburger butonu — sadece lg altında görünür -->
+        <button class="navbar-toggler border-0" type="button"
+          data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-white"></i>
+        </button>
+
+        <!-- Linklerin collapse bloğu — mobilde gizlenir, hamburger açar -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-lg-2 gap-xl-4 text-uppercase fw-bold mt-3 mt-lg-0">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#rooms">Rooms</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#news">Blog</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#newsletter">Contact</a></li>
+          </ul>
+          <div class="btn-hotel-yellow-rounded mt-3 mt-lg-0">
+            <a href="#!">Booking</a>
+          </div>
+        </div>
+
       </div>
-      <nav>
-        <ul class="d-flex gap-4 text-uppercase text-white fw-bold">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#rooms">Rooms</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#news">Blog</a></li>
-          <li><a href="#newsletter">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="btn-hotel-yellow-rounded">
-        <a href="#!" class="">Booking</a>
-      </div>
-    </div>
+    </nav>
   </header>
 
   <main>
     <section id="hero" class="d-flex align-items-center">
       <div class="container">
         <div class="line-before-after">Hotel & Resort</div>
-        <h1>The Coolest Hotel And Resort</h1>
+        <h1>The Coolest Hotel <span class="hero-break">And Resort</span></h1>
         <p class="text-white">
           Experience a premium seaside escape with elegant rooms, curated
           amenities, ocean views and a clean luxury atmosphere designed for
@@ -58,7 +72,8 @@
     <section id="booking">
       <div class="container">
         <div class="booking-form">
-          <form class="d-flex gap-3 align-items-center" action="#!" method="POST">
+          <!-- flex-column: mobilde alt alta | flex-md-row: tabletde yan yana | flex-wrap: sığmazsa alta geç -->
+          <form class="d-flex flex-wrap gap-3 align-items-center" action="#!" method="POST">
             <div class="booking-item d-flex flex-column">
               <label for="checkin">Check in</label>
               <input type="date" id="checkin" name="checkin" />
@@ -118,7 +133,7 @@
           Designed to balance comfort, elegance and practical hospitality with
           the essential amenities guests expect from a premium coastal resort.
         </p>
-        <div class="feature-items d-flex flex-wrap gap-4 justify-content-center">
+        <div class="feature-items">
           <div class="feature-card">
             <div class="card-up"><i class="bi bi-archive"></i></div>
             <div class="card-down">
@@ -226,7 +241,7 @@
           Choose from carefully styled room categories built around comfort,
           natural light and a premium guest experience.
         </p>
-        <div class="room-items d-flex flex-wrap gap-4 justify-content-center">
+        <div class="room-items">
           <div class="room-card-1">
             <div class="card-up"><span class="badge-top">Popular</span><span class="badge-bottom">$120 / Night</span>
             </div>
@@ -314,7 +329,7 @@
         <p class="text-center mx-auto my-4">
           Flexible room packages with practical service layers for solo guests, couples and premium vacation stays.
         </p>
-        <div class="plan-items d-flex flex-wrap gap-4 justify-content-center">
+        <div class="plan-items">
           <div class="plan-card-1">
             <div class="card-up"><i class="bi bi-briefcase"></i></div>
 
@@ -409,7 +424,7 @@
         <p class="text-center mx-auto my-4">
           A hospitality team focused on guest comfort, operational quality and warm, efficient communication.
         </p>
-        <div class="team-info d-flex flex-wrap gap-4 justify-content-center">
+        <div class="team-info">
           <div class="team-person-1">
             <div class="card-up">
               <div class="social">
@@ -549,7 +564,7 @@
         <p class="text-center mx-auto my-4">
           Comfort-centered service layers built to make short stays and longer vacations equally smooth.
         </p>
-        <div class="service-items d-flex flex-wrap gap-4 justify-content-center">
+        <div class="service-items">
           <div class="service-card-1">
             <div class="card-up"></div>
 
@@ -600,7 +615,7 @@
         <p class="text-center mx-auto my-4">
           Real impressions from guests who experienced the rooms, service and atmosphere first-hand.
         </p>
-        <div class="testimonials-items d-flex flex-wrap gap-4 justify-content-center">
+        <div class="testimonials-items">
           <div class="testimonials-card-1">
             <div class="card-down">
               <div class="stars">
@@ -652,7 +667,7 @@
 
 
         </p>
-        <div class="news-items d-flex flex-wrap gap-4 justify-content-center">
+        <div class="news-items">
           <div class="news-card-1">
             <div class="card-up"></div>
 
