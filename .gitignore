@@ -1,9 +1,6 @@
 # Local
 memory/
 
-# Dependencies
-node_modules/
-
 # macOS
 .DS_Store
 .AppleDouble
@@ -13,6 +10,3 @@ node_modules/
 .vscode/*
 !.vscode/settings.json
 .idea/
-
-# SCSS source maps (isteğe bağlı, kaldırabilirsin)
-# assets/css/*.map

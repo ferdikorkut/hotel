@@ -2,10 +2,8 @@
 @use "abstracts/variables";
 @use "abstracts/mixins";
 
-// 2. Bootstrap — variables'tan sonra gelmeli
-@use "../../node_modules/bootstrap/scss/bootstrap";
-
-// 3. Base — sıfırlama ve temel HTML element stilleri
+// 2. Base — sıfırlama ve temel HTML element stilleri
+// Bootstrap artık CDN üzerinden index.html'de yükleniyor
 @use "base/reset";
 @use "base/fonts";
 @use "base/typography";
