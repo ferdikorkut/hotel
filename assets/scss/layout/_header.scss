@@ -8,13 +8,36 @@ header {
   z-index: 100;
 
   nav {
-    // Mobilde menü açıldığında koyu arka plan — linkler görünsün diye
+    // Hamburger butonu
+    .navbar-toggler {
+      outline: none;
+      box-shadow: none;
+      background-color: transparent; // varsayılan: transparan
+      border-radius: 0.4rem;
+      padding: 0.25rem 0.5rem;
+      transition: background-color 0.3s ease;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+      // Menü açıkken: arka plan rengi gelsin
+      &[aria-expanded="true"] {
+        background-color: variables.$h2-color;
+      }
+    }
+
+    // Mobilde menü açıldığında arka plan
     .navbar-collapse.show,
     .navbar-collapse.collapsing {
-      background-color: rgba(0, 0, 0, 0.85);
+      background-color: variables.$h2-color;
       padding: 1rem;
       border-radius: 0.5rem;
       margin-top: 0.5rem;
+
+      // text-white !important'ı geçmek için yüksek özgüllük
+      .nav-link:hover {
+        color: variables.$hotel-yellow-color !important;
+      }
     }
 
     a:not(.navbar-brand) {
