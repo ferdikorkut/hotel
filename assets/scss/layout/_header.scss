@@ -22,14 +22,14 @@ header {
       }
       // Menü açıkken: arka plan rengi gelsin
       &[aria-expanded="true"] {
-        background-color: rgba(11, 43, 100, 0.8);
+        background-color: rgba(0, 0, 0, 0.85);
       }
     }
 
     // Mobilde menü açıldığında arka plan
     .navbar-collapse.show,
     .navbar-collapse.collapsing {
-      background-color: rgba(11, 43, 100, 0.8);
+      background-color: rgba(0, 0, 0, 0.85);
       padding: 1rem;
       border-radius: 0.5rem;
       margin-top: 0.5rem;
